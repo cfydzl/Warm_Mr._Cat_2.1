@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8ECD6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_margin="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/radius">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0sp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="2"
+                    android:text="暖喵先生"
+                    android:textSize="30sp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:paddingLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="福建工程学院（鳝溪校区）"/>
+                <TextView
+                    android:paddingLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="电话: 0591-22863181"/>
+                <TextView
+                    android:paddingLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="营业时间: 周日至周五 8:20-21:35"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/picture1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_marginBottom="25sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_weight="2"
+            android:background="#FFFAE8">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F8ECD6"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tuijian"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:background="#FFFAE8"
+                    android:text="推荐"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/zhushi"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="主食"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/shisu"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="时素"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/shihun"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="时荤"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/nongtang"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="浓汤"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/xiaoshi"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="小食"
+                    android:textColor="#B39999" />
+
+                <Button
+                    android:id="@+id/jiushui"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="酒水"
+                    android:textColor="#B39999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/food_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="5">
+                </ListView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <Button
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:background="@drawable/buycar" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sum_price"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="总价: 0.0 ￥"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/buy"
+                            android:layout_width="50sp"
+                            android:layout_height="25sp"
+                            android:background="@drawable/button1"
+                            android:text="下单"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:background="#FFFAE8">
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/index_onclick"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:background="@drawable/index" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/book_onclick"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:background="@drawable/book"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/user_onclick"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:background="@drawable/user"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
